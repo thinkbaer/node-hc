@@ -1,0 +1,43 @@
+## Meilensteine
+
+### Konfiguration
+
+- Metadatenspeicherung +
+Konfiguration der eigenen Datenbank
+
+- Konfiguration +
+Diese kann entweder in einer Datei vorliegen,
+beziehungsweise über die Oberfläche konfiguriert werden.
+Die Parameter sind dann abhängig vom Typ der Quelle (aios, mysql, postgres).
+
+- Übersteuerung von gespeicherten Konfigurationen
+
+### Modularisierung
+
+- Pakete mit Adaptern und deren Abhängigkeiten sollen nachladbar und zur Laufzeit aktivierbar sein
+
+### Integration von Datenquellen
+
+- Adapter-API +
+Diese dient der Spezifikation der einheitlichen Einbindung von Quellen
+
+
+- Analyse der DB Struktur
+
+### Query-Engine
+
+- Verarbeiten von Anfragen
+
+### Template-Engine für Entitäten
+
+- Definition von Templates und Speicherung, entweder per UI oder per Konfigurationdateien
+
+- Laden, Aktualisieren, Löschen und Speichern von Entitäten +
+@Note: Aufgepasst, hier müssen Beziehung zwischen den Objekten Berücksichtigung finden, die vielleicht
+nicht modifiziert werden sollen. Idealerweise sollte schon im Template definiert werden welche Objekte
+in dem jeweiligen Kontext modifiziert werden können oder nicht. (Cascade: ONUPDATE, ONDELETE, ONINSERT?)
+
+
+### Jobs und Pipelines
+
+- Hintergrundjobs sollten definierbar gemacht werden

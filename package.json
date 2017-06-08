@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/thinkbaer/node-hc/issues"
   },
-  "homepage": "https://github.com/thinkbaer/node-hc#readme"
+  "homepage": "https://github.com/thinkbaer/node-hc#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^3.4.2",
+    "mocha-typescript": "^1.1.4",
+    "typescript": "^2.3.4"
+  }
 }
